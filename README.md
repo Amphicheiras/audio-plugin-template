@@ -1,2 +1,39 @@
-# Vocal-Divider
-Separate 2 voices found in a mono input to a stereo output with each voice on each channel.
+Template for JUCE projects using CMake
+
+## Getting Started
+
+### Prerequisites
+
+- JUCE Framework: Required for building and running the plugin. Download from JUCE.
+- Supported DAWs: Any Digital Audio Workstation that supports VST, AU, or standalone plugins.
+- Compiler: Ensure a compatible C++ compiler is installed. For Windows, MSVC is recommended, while Xcode works well on macOS.
+
+### Installation
+
+1. Clone the repository:
+    ```sh
+     git clone https://github.com/Amphicheiras/UF-Oscilloscope.git
+     cd UF-Oscilloscope
+    ```
+
+2. Have a look at the /root and /plugin CMakeLists.txt
+
+2. Configure with CMake:
+   ```sh
+   cmake -S . -B build
+   ```
+
+3. Compile with CMake:
+   ```sh
+   cmake --build build
+   ```
+
+### Acknowledgments
+
+Special thanks to the open-source audio community and JUCE for their continuous support and resources.
+
+Super special thanks to Jan Wilczek!
+
+# Useful Links
+
+- [JUCE with CMake](https://www.youtube.com/watch?v=Uq7Hwt18s3s)
