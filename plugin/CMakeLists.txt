@@ -1,18 +1,18 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(3DAudioPlugin VERSION 0.1.0)
+project(PluginName VERSION 0.1.0)
 
 set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/PluginName")
 
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY_NAME _UF0
+    COMPANY_NAME TEMP
     IS_SYNTH FALSE
     NEEDS_MIDI_INPUT FALSE
     NEEDS_MIDI_OUTPUT FALSE
-    PLUGIN_MANUFACTURER_CODE UF00
+    PLUGIN_MANUFACTURER_CODE TEMP
     PLUGIN_CODE TEMP
     FORMATS Standalone VST3
-    PRODUCT_NAME "PluginName"
+    PRODUCT_NAME "Plugin Name"
 )
 
 target_sources(${PROJECT_NAME}
@@ -50,4 +50,6 @@ else()
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR}/..)
+## ***** COMMENT-OUT IF USING LOCAL JUCE LIB ******
+# source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR}/..)
+## ************************************************
